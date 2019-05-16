@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+#encabezado
+{
+	height:70px;
+	text-align:center;
+	font-style:italic;
+	font-size:36px;
+}
+#centrado
+{
+	width:960px;
+}
+#lateral
+{
+	width:260px;
+	position:absolute;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+}
+#centro
+{
+	width:700px;
+	text-align:left;
+	position:absolute;
+	margin:0px;
+	margin-left:260px;
+	padding:0px;
+}
+.tabla_1
+{
+	text-align:justify;
+	text-align:inherit;
+    width:700px;
+}
+.tabla_1 td
+{
+	font-size: 15px;
+    line-height: 20px;
+	padding: 0 20px;
+    vertical-align: top;
+    width: 230px;
+}
+
+

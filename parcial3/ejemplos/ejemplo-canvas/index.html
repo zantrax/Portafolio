@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas!</title>
+  <script type="text/javascript">
+    
+    function iniciar()
+    {
+        var elemento=document.getElementById("lienzo");
+        lienzo=elemento.getContext("2d");
+        lienzo.beginPath();
+        lienzo.arc(100,100,50,0,Math.PI*2,false);
+        lienzo.stroke();
+        /*  lienzo.fillStyle="#000099";
+        lienzo.strokeStyle="#990000";
+        lienzo.strokeRect(100,100,120,120);
+        lienzo.fillRect(110,110,100,100);
+        lienzo.clearRect(120,120,80,80);*/
+        lienzo.beginPath();
+        lienzo.moveTo(50,50);
+        /*lienzo.lineTo(300,300);
+        lienzo.lineTo(100,200);
+        lienzo.closePath();
+        lienzo.fill();
+        lienzo.stroke();*/
+        lienzo.quadraticCurveTo(100,125,50,200);
+        lienzo.moveTo(250,50);
+        lienzo.bezierCurveTo(200,125,300,125,250,200);
+        lienzo.stroke();
+        lienzo.moveTo(280,50);
+        lienzo.fillStyle="rgb(200,0,0)";
+        lienzo.fillRect(10,10,55,50);
+        lienzo.fillStyle="rgb(0,0,200,.5)";
+        lienzo.fillRect(30,30,55,50);
+    }
+  </script>
+  
+</head>
+
+<body onload="iniciar()">
+<section id="cajalienzo">
+  <canvas id="lienzo" width="800" height="400" style="border: 3px solid black">su navegador no soporta el canvas</canvas>
+</section>  
+  
+
+ 
+
+</body>
+</html>
